@@ -42,21 +42,72 @@
 
     /* Custom blocks */
 
-    .cg-variable > rect, .cg-value > rect {
-        fill: var(--dude-type-number-color) !important;
-        stroke: var(--dude-type-number-color) !important;
+    .dude-graph-block-variable > rect,
+    .dude-graph-block-variable > rect {
+        fill: var(--dude-type-number-color);
+        stroke: var(--dude-type-number-color);
     }
 
-    .cg-variable > text, .cg-value > text {
+    .dude-graph-block-variable > text,
+    .dude-graph-block-variable > text {
+        stroke-width: 1;
         fill: #333;
     }
 
-    .cg-variable .dude-graph-output circle,
-    .cg-variable .dude-graph-output path,
-    .cg-value .dude-graph-output circle,
-    .cg-value .dude-graph-output path{
-        stroke-width: 1 !important;
-        stroke: #333 !important;
-        fill: #333 !important;
+    /**
+     * Custom points
+     */
+    .dude-graph-input.dude-graph-type-Number path,
+    .dude-graph-output.dude-graph-type-Number path {
+       stroke-width: 1;
+       stroke: var(--dude-type-number-color);
+       fill: var(--dude-type-number-color);
+    }
+
+    .dude-graph-input.dude-graph-type-Number text,
+    .dude-graph-output.dude-graph-type-Number text {
+       fill: var(--dude-type-number-color);
+    }
+
+    .dude-graph-input.dude-graph-type-String path,
+    .dude-graph-output.dude-graph-type-String path {
+       stroke-width: 1;
+       stroke: var(--dude-type-string-color);
+       fill: var(--dude-type-string-color);
+    }
+
+    .dude-graph-input.dude-graph-type-String text,
+    .dude-graph-output.dude-graph-type-String text {
+       fill: var(--dude-type-string-color);
+    }
+
+    .dude-graph-input.dude-graph-type-Boolean path,
+    .dude-graph-output.dude-graph-type-Boolean path {
+       stroke-width: 1;
+       stroke: var(--dude-type-boolean-color);
+       fill: var(--dude-type-boolean-color);
+    }
+
+    .dude-graph-input.dude-graph-type-Boolean text,
+    .dude-graph-output.dude-graph-type-Boolean text {
+       fill: var(--dude-type-boolean-color);
+    }
+
+    /**
+     * Custom connections
+     */
+    .dude-graph-connection.dude-graph-output-type-Number,
+    .dude-graph-connection.dude-graph-input-type-Number {
+       stroke: var(--dude-type-number-color);
+    }
+
+    .dude-graph-connection.dude-graph-output-type-String,
+    .dude-graph-connection.dude-graph-input-type-String {
+       stroke: var(--dude-type-string-color);
+    }
+
+    .dude-graph-connection.dude-graph-output-type-Boolean,
+    .dude-graph-connection.dude-graph-input-type-Boolean {
+       stroke: var(--dude-type-boolean-color);
     }
 </style>
