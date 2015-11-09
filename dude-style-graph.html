@@ -1,8 +1,9 @@
 <style is="custom-style">
     :root {
 
-    /* groups */
-
+    /**
+     * Group
+     */
     --dude-graph-group: {
          transition-duration: .2s;
          transition-property: stroke-width;
@@ -20,8 +21,9 @@
          stroke-width: 10px;
      };
 
-    /* block */
-
+    /**
+     * Block
+     */
     --dude-graph-block: {
          transition-duration: .2s;
          transition-property: stroke-width;
@@ -40,8 +42,9 @@
      };
     }
 
-    /* Custom blocks */
-
+    /**
+     * Custom blocks
+     */
     .dude-graph-block-variable > rect,
     .dude-graph-block-variable > rect {
         fill: var(--dude-type-number-color);
@@ -64,20 +67,10 @@
        fill: var(--dude-type-number-color);
     }
 
-    .dude-graph-input.dude-graph-type-number text,
-    .dude-graph-output.dude-graph-type-number text {
-       fill: var(--dude-type-number-color);
-    }
-
     .dude-graph-input.dude-graph-type-string path,
     .dude-graph-output.dude-graph-type-string path {
        stroke-width: 1;
        stroke: var(--dude-type-string-color);
-       fill: var(--dude-type-string-color);
-    }
-
-    .dude-graph-input.dude-graph-type-string text,
-    .dude-graph-output.dude-graph-type-string text {
        fill: var(--dude-type-string-color);
     }
 
@@ -88,9 +81,11 @@
        fill: var(--dude-type-boolean-color);
     }
 
-    .dude-graph-input.dude-graph-type-boolean text,
-    .dude-graph-output.dude-graph-type-boolean text {
-       fill: var(--dude-type-boolean-color);
+    .dude-graph-input.dude-graph-type-entity path,
+    .dude-graph-output.dude-graph-type-entity path {
+        stroke-width: 1;
+        stroke: var(--dude-type-entity-color);
+        fill: var(--dude-type-entity-color);
     }
 
     /**
@@ -109,5 +104,10 @@
     .dude-graph-connection.dude-graph-output-boolean,
     .dude-graph-connection.dude-graph-input-boolean {
        stroke: var(--dude-type-boolean-color);
+    }
+
+    .dude-graph-connection.dude-graph-output-entity,
+    .dude-graph-connection.dude-graph-input-entity {
+        stroke: var(--dude-type-entity-color);
     }
 </style>
