@@ -1,5 +1,8 @@
 {
   "name": "dude-style",
-  "version": "0.1.1",
-  "description": "This element provides a default css template and some customisable variables for dude elements. "
+  "version": "0.1.2",
+  "description": "This element provides a default css template and some customisable variables for dude elements. ",
+  "dependencies": {
+    "font-awesome": "~4.5.0"
+  }
 }
