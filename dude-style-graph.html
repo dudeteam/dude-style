@@ -6,19 +6,18 @@
          */
         --dude-graph-group: {
              transition-duration: .2s;
-             transition-property: stroke-width;
+             transition-property: opacity;
              fill: #fff;
              stroke: #fff;
              opacity: 0.1;
          };
 
         --dude-graph-group-hover: {
-             stroke-width: 10px;
+             opacity: 0.15;
          };
 
         --dude-graph-group-selected: {
-             opacity: 0.15;
-             stroke-width: 10px;
+             opacity: 0.2;
          };
 
         /**
@@ -26,21 +25,21 @@
          */
         --dude-graph-block: {
              transition-duration: .2s;
-             transition-property: stroke-width;
+             transition-property: opacity, stroke;
              fill: var(--dude-secondary-background-color);
              stroke: var(--dude-secondary-background-color);
-             opacity: 0.7;
+             opacity: 0.6;
          };
 
         --dude-graph-block-hover: {
             stroke-width: 2px;
-            stroke: #cccccc;
-            opacity: 1;
+            stroke: var(--dude-primary-color);
+            opacity: 0.8;
          };
 
         --dude-graph-block-selected: {
              stroke-width: 2px;
-            stroke: #cccccc;
+             stroke: var(--dude-primary-color);
              opacity: 1;
         };
     }
